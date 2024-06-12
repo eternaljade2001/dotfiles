@@ -1,0 +1,36 @@
+# birdie 
+
+# Default colors
+[colors.primary]
+background = '#000000'
+foreground = '#C6C6C4'
+
+# Normal colors
+[colors.normal]
+black   = '#777777'
+red     = '#f72323' 
+green   = '#6ff236'
+yellow  = '#fd9b18'
+blue    = '#2440ef'
+magenta = '#9A4EAE'
+cyan    = '#00fff2'
+white   = '#ffffff'
+
+# Bright colors
+[colors.bright]
+black   = '#ffffff'
+red     = '#FF0000'
+green   = '#4eff00'
+yellow  = '#ffae40' 
+blue    = '#0023ff'
+magenta = '#FF1493'
+cyan    = '#42fff5'
+white   = '#ffffff'
+
+[window]
+opacity = 0.7
+padding = {x= 12, y= 12}
+
+[font]
+normal = {family = "Source Code Pro", style = "semibold"}
+
