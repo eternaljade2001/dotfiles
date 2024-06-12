@@ -105,6 +105,8 @@ neofetch
 
 #qol aliases
 alias la="ls -a"
+alias DELETED!="rm -r"
+alias strongbad_email.exe="thunderbird & bg"
 
 #configuration access aliases
 alias i3config="vim ~/.config/i3/config"

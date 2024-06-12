@@ -202,14 +202,14 @@ gaps inner 8
 
 # border config
 	# class                 border  backgr. text    indicator child_border
-	client.focused          #4c7899 #285577 #ffffff #2e9ef4   #e71d1d
-	client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
-	client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+	client.focused          #4c7899 #285577 #ffffff #e71d1d   #e71d1d
+	client.focused_inactive #333333 #5f676a #ffffff #ffffff   #ffffff
+	client.unfocused        #333333 #222222 #888888 #ffffff   #ffffff
 	client.urgent           #2f343a #900000 #ffffff #900000   #900000
 	client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 	client.background       #ffffff
 
-	default_border pixel
+	default_border pixel 1
 
 # window behavior config
 focus_on_window_activation none
@@ -230,5 +230,6 @@ assign [class="Steam"] $ws3
 #workspace configuration
 workspace_auto_back_and_forth yes
 
-#launch polybar at i3 startup
+#launch some stuff at i3 startup
+exec_always flameshot
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
