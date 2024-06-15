@@ -5,7 +5,7 @@ configuration{
     terminal: "alacritty";
     drun-display-format: "{icon} {name}";
     location: 0;
-    disable-history: false;
+    disable-history: true;
     sidebar-mode: true;
     display-drun: " ";
     display-run: " ";
@@ -16,7 +16,8 @@ configuration{
     kb-row-left: "Left,Control+h";
     kb-row-right: "Right,Control+l";
     kb-row-down: "Down,Control+j";
-
+    
+    kb-delete-entry: "Shift+Delete";
     kb-accept-entry: "Control+z,Control+y,Return,KP_Enter";
 
     //fixing up
@@ -26,6 +27,5 @@ configuration{
     kb-move-char-forward: "Control+f";
     kb-mode-complete: "Control+o";
 }
-//@theme "/usr/share/rofi/themes/tokyonight.rasi"
 @theme "/usr/share/rofi/themes/cardinal.rasi"
-//@theme "/usr/share/rofi/themes/tokyonight_big2.rasi"
+
