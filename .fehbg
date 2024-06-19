@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-scale '/home/etjade/image/wallpaper.png' 
+feh --no-fehbg --bg-scale '/home/etjade/media/image/wallpaper.png' 

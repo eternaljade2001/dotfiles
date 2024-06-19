@@ -87,7 +87,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+comma split h 
+bindsym $mod+comma split h
 
 # split in vertical orientation
 bindsym $mod+. split v
@@ -193,7 +193,7 @@ bindsym $mod+r mode "resize"
 # |-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-|
 
 # mouse configuration
-mouse_warping none 
+mouse_warping none
 
 # gaps configuration
 gaps inner 8
@@ -221,16 +221,23 @@ no_focus [window_role="notification"]
 #make steam windows float for ease of use
 for_window [class="steam"] floating enable
 for_window [class="steamwebhelper"] floating enable
-
+for_window [class="qbittorrent"] floating enable
+for_window [class="qBittorrent"] floating enable
+for_window [class="discord"] floating enable
 #assign certain windows to specific workspaces on startup
 
-assign [class="discord"] $ws3
-#assign [class="Steam"] $ws3
+# assign [class="discord"] $ws2
+# assign [class="Steam"] $ws3
+# assign [class="qbittorrent"] $ws5
 
 #workspace configuration
 workspace_auto_back_and_forth yes
 
 #launch some stuff at i3 startup
-exec_always flameshot
+exec --no-startup-id flameshot
 exec_always --no-startup-id i3-auto-layout
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec --no-startup-id discord --start-minimized
+exec --no-startup-id steam -silent
+exec --no-startup-id mullvad-vpn
+exec qbittorrent
